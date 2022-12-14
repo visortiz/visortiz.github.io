@@ -3,14 +3,16 @@
 }
 
 body {
+  padding: 30px;
   background: rgb(218,175,231);
   background: linear-gradient(159deg, rgba(218,175,231,1) 42%, rgba(14,202,242,1) 100%);
+  background-attachment: fixed;
   font-family: 'Montserrat';
-  font-size: 2em;
   color: rgb(115, 68, 129);
+  font-size: 2em;
 }
 
-.main {
+.home-main {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -19,15 +21,24 @@ body {
   justify-content: center;
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* HOME - index.html */
+
 .home-img {
   max-width: 600px;
 }
 
-.content {
+.home-content {
   padding: 30px 0;
 }
 
-.actions a {
+.home-actions a {
   font-size: .5em;
   color: #FFF;
   text-decoration: none;
@@ -37,25 +48,51 @@ body {
   transition: border-radius 0.5s ease 0s;
 }
 
-.actions a:hover {
+.home-actions a:hover {
   background-color: rgba(67, 12, 83, .1);
   transition: background-color 1.5s ease 0s;
   border-radius: 0 10px;
   transition: border-radius 0.5s ease 0s;
 }
 
-@media only screen 
-   and (max-width : 480px) {
+/* Lorem Component - assets/scripts/lorem.js */
+
+.lorem-container {
+  margin: 100px 400px;
+  text-align: justify;
+}
+
+.lorem-container p {
+  padding: 30px 0;
+  font-size: .9em;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width : 480px) {
     .main {
       justify-content: flex-start;
       margin-top: 50px;
     }
 
+    /* HOME - index.html */
+
     .home-img {
       width: 300px;
     }
 
-    .content {
+    .home-content {
       font-size: .6em;
+    }
+
+    /* Lorem Component - assets/scripts/lorem.js */
+
+    .lorem-container {
+      margin: 30px;
+    }
+    
+    .lorem-container p {
+      padding: 5px 0;
+      font-size: .4em;
     }
 }
