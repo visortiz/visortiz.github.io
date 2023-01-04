@@ -3,7 +3,6 @@
 }
 
 body {
-  padding: 30px;
   background: rgb(218,175,231);
   background: linear-gradient(159deg, rgba(218,175,231,1) 42%, rgba(14,202,242,1) 100%);
   background-attachment: fixed;
