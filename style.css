@@ -6,9 +6,9 @@ body {
   background: rgb(218,175,231);
   background: linear-gradient(159deg, rgba(218,175,231,1) 42%, rgba(14,202,242,1) 100%);
   background-attachment: fixed;
-  font-family: 'Montserrat';
+  font-family: 'Pixelify Sans';
   color: rgb(115, 68, 129);
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .home-main {
@@ -63,7 +63,7 @@ body {
 
 .lorem-container p {
   padding: 30px 0;
-  font-size: .9em;
+  font-size: .6em;
 }
 
 /* MEDIA QUERIES */
